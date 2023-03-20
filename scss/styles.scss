@@ -1,17 +1,14 @@
 
-
-
-
-
+@import'colors';
 
 //Global
 * {
-    color: #fff;
+    @include colorText;
     font-size: 1.2rem;
 }
 
 .container {
-    background-color:#f7eb80 ;
+    @include color2;
     border: 1px solid #000;
     display: flex;
     height: 500px;
@@ -20,26 +17,26 @@
     padding: 1em;
     width: 50%;
 
-
+    $colorLeft: #6e7a5b;
     .left {
-        background-color: #6e7a5b;
+        background-color: $colorLeft;
         height: 100%;
         width: 69%;
         position: relative;
         text-align: center;
-   
         
     }
-
+    
+    }
     .right {
-        background-color:#a6ad80 ;
+        @include colorRight;
         height: 100%;
         position: relative;
         width: 29%;
         text-align: center;
 
         .button {
-            background-color: #dcf829;
+            @include colorBtn;
             color:grey ;
             border: 0;
             border-radius: 10px;
@@ -58,4 +55,3 @@
         }
     }
 
-}

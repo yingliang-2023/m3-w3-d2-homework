@@ -20,14 +20,15 @@
   position: relative;
   text-align: center;
 }
-.container .right {
+
+.right {
   background-color: #a6ad80;
   height: 100%;
   position: relative;
   width: 29%;
   text-align: center;
 }
-.container .right .button {
+.right .button {
   background-color: #dcf829;
   color: grey;
   border: 0;
